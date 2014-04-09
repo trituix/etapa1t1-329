@@ -63,11 +63,7 @@ public class Ball extends PhysicsElement {
      pos_t = pos_tPlusDelta;
      speed_t = speed_tPlusDelta;
    }
-   
-   public void computeNextState() {
-	   
-   }
-   
+      
    public String getDescription() {
 	   return "Descripcion";
    }
