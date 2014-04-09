@@ -26,8 +26,14 @@ public class MyWorld {
    }
 
    public void printState(double t){
-    //  to be coded by you
+	   String s ="Time\t";
+	     for (PhysicsElement e:elements)
+	       s+=e.getState(t) + "\t";
+	     out.println(s);
    }
+   public void computeNextState(){
+	     
+	   }
 
    public void simulate (double delta_t, double endTime, double samplingTime) {  // simulate passing time
       double t=0;
