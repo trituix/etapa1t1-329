@@ -48,8 +48,16 @@ public class Ball extends PhysicsElement {
    }
    
    public boolean collide(Ball b) {
-    return true;
-    }
+     boolean collision;
+     double xDiff;
+     double yDiff;
+     double distanceSquared;
+     xDiff = this.pos_t - b.pos_t;
+     yDiff = this.radius - b.radius;
+     distanceSquared = xDiff*xDiff + yDiff*yDiff;
+     collision = distanceSquared < (this.radius + b.radius)*(this.radius + b.radius);
+     return collision;
+   }
    
    public void updateState(){
      pos_t = pos_tPlusDelta;
