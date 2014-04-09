@@ -28,12 +28,9 @@ public class MyWorld {
    public void printState(double t){
 	   String s ="Time\t";
 	     for (PhysicsElement e:elements)
-	       s+=e.getState(t) + "\t";
+	       s+=e.getState() + "\t";
 	     out.println(s);
    }
-   public void computeNextState(){
-	     
-	   }
 
    public void simulate (double delta_t, double endTime, double samplingTime) {  // simulate passing time
       double t=0;
@@ -51,6 +48,8 @@ public class MyWorld {
    }   
 
    public Ball findCollidingBall(Ball me) {
-      // to be coded by you
-   }  
+	   if(me.collide(me)){
+	   }
+	   return me;
+   }
 } 
