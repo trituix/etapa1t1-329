@@ -65,6 +65,6 @@ public class Ball extends PhysicsElement {
    }
       
    public String getDescription() {
-	   return "Descripcion";
+	   return "Ball.";
    }
 }
