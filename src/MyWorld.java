@@ -52,13 +52,11 @@ public class MyWorld {
 
    public Ball findCollidingBall(Ball me) {
 	   for (PhysicsElement e:elements){
-		   if (e.getClass().equals(Ball.class)){
-			   if(((Ball) e).collide(me)&&(me.getId()!=e.getId())){
-				   return ((Ball) e);
-		       }
+		   if (e.getClass().equals(Ball.class) && me.collide((Ball) e) && me.getId() != e.getId() ){
+			   return (Ball) e;
 	   	   }
 	   }
-	return null;
+	   return null;
    }
    
    
