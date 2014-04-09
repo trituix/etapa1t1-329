@@ -48,8 +48,8 @@ public class MyWorld {
    }   
 
    public Ball findCollidingBall(Ball me) {
-	   if(me.collide(me)){
-	   }
-	   return me;
+	  /* if(me.collide(me)){
+	   }*/
+	   return null;
    }
 } 
