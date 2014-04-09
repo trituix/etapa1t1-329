@@ -26,7 +26,7 @@ public class MyWorld {
    }
 
    public void printState(double t){
-	   String s ="Time\t";
+	   String s =String.valueOf(t)+"\t";
 	     for (PhysicsElement e:elements)
 	       s+=e.getState() + "\t";
 	     out.println(s);
