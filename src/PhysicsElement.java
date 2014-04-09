@@ -10,4 +10,9 @@ public abstract class PhysicsElement {
    }
    public abstract String getDescription();
    public abstract String getState();
+   public abstract void computeNextState(double delta_t, MyWorld myWorld);
+   public abstract void updateState();
+   public abstract double getMass();
+
+   
 }
