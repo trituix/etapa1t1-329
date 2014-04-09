@@ -4,7 +4,8 @@ public abstract class PhysicsElement {
    protected PhysicsElement( int id){
       myId = id;
    }
-   protected int getGonzalo() {
+   
+   protected int getId() {
       return myId;
    }
    public abstract String getDescription();
