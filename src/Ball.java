@@ -43,7 +43,7 @@ public class Ball extends PhysicsElement {
         pos_tPlusDelta = pos_t + speed_tPlusDelta*delta_t;
      } else {
         speed_tPlusDelta = speed_t;
-        pos_tPlusDelta = pos_t + speed_t*delta_t;
+        pos_tPlusDelta = pos_t + speed_tPlusDelta*delta_t;
      }
    }
    
