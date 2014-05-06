@@ -4,9 +4,15 @@ public abstract class PhysicsElement {
    protected PhysicsElement( int id){
       myId = id;
    }
+   
    protected int getId() {
       return myId;
    }
    public abstract String getDescription();
    public abstract String getState();
+   public abstract void computeNextState(double delta_t, MyWorld myWorld);
+   public abstract void updateState();
+   public abstract double getMass();
+
+   
 }
